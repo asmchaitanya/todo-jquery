@@ -1,0 +1,57 @@
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+    <title>To Do APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="todo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row  banner">
+        <div class="banner-title" text-align:"center">TO DO</div>
+        <div class="col-lg-12">
+          <div class="form-group entry-form">
+            <div class="input-group">
+              <input type="text" class="form-control task-entry-box" id="task-name" placeholder ="Name of the task........"></input>
+              <span class="input-group-btn">
+                <button class="btn btn-primary" id="add-task">Add Task</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row task-list">
+        <div class="col-lg-12">
+          <div class="list-group-item active">Your Tasks<span class="badge" id="task-count"></span></div>
+          <ul class="list-group"></ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="pre-footer">
+          <div class="col-lg-6"><a id="save-all" class="btn btn-success btn-block">Save All</a></div>
+          <div class="col-lg-6"><a id="clear-all" class="btn btn-warning btn-block">Clear All</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row alert-section">
+      <div class="col-lg-12 success-alert ">
+        <div class='alert alert-success alert-dismissible'  role='alert'><button class="close" id="close-success-alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Success....</strong><span id="success-alert-message"></span></div>
+      </div>
+      <div class="col-lg-12 warning-alert ">
+        <div class="alert alert-warning alert-dismissible" role='alert'><button class="close"  id="close-warning-alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><b><span id="warning-alert-message"></span></b></div>
+      </div>
+    </div>
+
+  </body>
+</html>

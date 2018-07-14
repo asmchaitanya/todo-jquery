@@ -1,0 +1,60 @@
+.task-actions {
+  float:right;
+}
+
+.list-group-item{
+  padding: 15px 25px;
+  border: 4px solid #b0dce8;
+}
+.glyphicon {
+  font-size: 16px;
+}
+.divider {
+  padding-left: 6px;
+  padding-right: 6px;
+  color:#dadfe8;
+}
+
+.list-title {
+  text-align: center;
+}
+
+.banner{
+  background-color:crimson;
+}
+
+
+.glyphicon-colour {
+  color: green;
+  font-size: 20px;
+
+}
+
+.banner-title {
+  align-content: center;
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.row {
+  margin-bottom: 15px;
+}
+.list-group-item.active {
+  font-size: 18px;
+}
+
+.btn {
+  line-height: 1.8;
+}
+
+.task-entry-box {
+  height: 39px;
+}
+
+.task-title-style {
+  
+  font-weight: lighter;
+}
