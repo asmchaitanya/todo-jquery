@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+    <title>To Do APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script type="text/javascript" src="todo.js"></script>
+    <script type="text/javascript" src="charts.js"></script>
+  </head>
+<script>
+$(document).ready(function(){
+  $("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myDiv").offset().top
+    }, 2000);
+  });
+})
+
+</script>
+
+<style>
+.div {
+    min-height:1100px;
+    background:red;
+}
+#myDiv {
+    height:100px;
+    background:blue;
+}
+</style>
+<div class="panel panel-info task-form-panel" id="a">
+  <div class="panel-heading">
+    <h3 class="panel-title"> Make Your Task Mark </h3>
+  </div>
+  <div class="panel-body">
+    <div class="task-entry-form">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+        <input class="mdl-textfield__input" type="text" id="task-name">
+        <label class="mdl-textfield__label" for="task-name">Task Name..........</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text"  rows="3"id="task-description" ></input>
+        <label class="mdl-textfield__label" for="stask-description">Task Description.........</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="date"  rows="3"id="task-date"></input>
+        <label class="mdl-textfield__label" for="task-date"></label>
+      </div>
+     <span>Priority:</span>
+     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="priority1">
+        <input type="radio" id="priority1" name="priority" class="mdl-radio__button" value="Low"checked>
+        <span class="mdl-radio__label">Low</span>
+     </label>
+     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="priority2">
+        <input type="radio" id="priority2" name="priority" class="mdl-radio__button" value="Medium">
+        <span class="mdl-radio__label">Medium</span>
+     </label>
+     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="priority3">
+        <input type="radio" id="priority3" name="priority" class="mdl-radio__button" value="High">
+        <span class="mdl-radio__label">High</span>
+     </label>
+     <button class="mdl-cell mdl-cell--12-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="add-task">Add Task</button>
+  </div>
+</div>
+</div>
+
+<div class="mdl-grid task-board-actions" id="b">
+  <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="save-all">Save</button>
+  <button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent " id="clear-all">Clear</button>
+   <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored task-form-panel-fab"><i class="material-icons">add</i></button>
+</div>

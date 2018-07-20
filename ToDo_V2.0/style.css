@@ -1,0 +1,153 @@
+.task-actions {
+  float:right;
+}
+
+.list-group-item{
+  padding: 15px 25px;
+  border: 4px solid #b0dce8;
+}
+.glyphicon {
+  font-size: 16px;
+}
+.divider {
+  padding-left: 6px;
+  padding-right: 6px;
+  color:#dadfe8;
+}
+
+.list-title {
+  text-align: center;
+}
+
+.banner{
+  background-color:crimson;
+}
+
+
+.task-complete-icon-change {
+  color: green;
+  font-size: 20px;
+
+}
+
+.banner-title {
+  align-content: center;
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.row {
+  margin-bottom: 15px;
+}
+.list-group-item.active {
+  font-size: 18px;
+}
+
+.btn {
+  line-height: 1.8;
+}
+
+.task-entry-box {
+  height: 39px;
+}
+
+span.app-title {
+  font-family: cursive;
+}
+
+.demo-card-square.mdl-card {
+min-width: 150px
+max-width: 200px;
+width: auto;
+height: 200px;
+}
+.mdl-card__title {
+color: black;
+background: #46B6AC;
+}
+
+.mdl-layout {
+  align-content: center;
+}
+
+.task-delete-icon {
+  float: right;
+}
+
+.mdl-cell {
+  margin-right: 10px;
+}
+
+.high-prior-task {
+  background: #f91845;
+}
+
+.low-prior-task {
+  background-color: #2bbbad;
+}
+
+.medi-prior-task {
+  background-color: #1c90e2;
+}
+
+.panel-info > .panel-heading {
+    color: #ffffff;
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    color: inherit;
+}
+
+.panel-body {
+    padding: 15px;
+}
+.panel-info {
+    border-color: #3f51b5;
+}
+.panel{
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: #3f51b5;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+button.mdl-button--fab{
+  height: 45px;
+  width: 45px;
+  min-width: 45px;
+  float: right;
+}
+h3.panel-title {
+  line-height: 45px;
+}
+.msg-panel {
+  margin: 1px;
+}
+
+h2.mdl-card__title-text {
+  font-size: 18px;
+}
+
+button.task-form-panel-fab{
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+}
